@@ -4,12 +4,14 @@ channels:
   - conda-forge
 dependencies:
   - python
+  - pip
   - numpy
   - matplotlib
   - rise
   - scipy
+  - nibabel
+  - nipype
   - pip:
-    - nibabel
     - nilearn
     - sklearn
 
