@@ -1,11 +1,19 @@
-# Python tips and tricks
+# Nipy Demonstrations
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/neurohackweek/python-tips-and-tricks/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/effigies/nipy-demos/master)
 
-> A selected list of tips and tricks for improving your Python code
+> Demonstrations of nibabel and nipype
 
-Presented by [Tal Yarkoni](http://github.com/tyarkoni) at The University of Washington eScience Institute's [Neurohackweek 2016](https://neurohackweek.github.io/nhw2016/) course.
+Presented by [Chris Markiewicz](https://github.com/effigies) at The University of Washington eScience Institute's [Neurohackweek 2019](https://neurohackweek.github.io/nhw2019/) course.
 
-All content can be found in [this Jupyter notebook](python-tips-and-tricks.ipynb). You can either view the rendered notebook online, or clone/download the notebook to your local machine and run it interactively with Jupyter.
+At present, it makes strong assumptions about the presence of data. Please install it with:
 
-Alternatively, checkout the [Binder](https://mybinder.org/v2/gh/neurohackweek/python-tips-and-tricks/master) for this notebook and run the examples in your browser :smiley_cat:
+```Shell
+datalad install -r ///labs/poldrack/ds003_fmriprep /data/bids/ds003_fmriprep
+datalad get -r /data/bids/ds003_fmriprep/sub-01/func/*{space-MNI*2009*_desc-preproc_bold.nii.gz,.dtseries.nii,space-fsaverage5*.func.gii} \
+               /data/bids/ds003_fmriprep/sourcedata/sub-01/*/*.nii.gz
+```
+
+This repository is derived from [Tal Yarkoni](https://github.com/tyarkoni)'s
+[Python Tips and Tricks](https://github.com/neurohackweek/python-tips-and-tricks) repository, with
+Binder additions by [Kirstie Whitaker](https://github.com/KirstieJane).
